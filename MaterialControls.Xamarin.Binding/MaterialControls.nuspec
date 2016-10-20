@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>MaterialControls</id>
+        <version>1.2.2</version>
+        <authors>FPT Software</authors>
+        <iconUrl>https://avatars2.githubusercontent.com/u/10112519?v=3&amp;s=200</iconUrl>
+        <licenseUrl>https://github.com/fpt-software/Material-Controls-For-iOS/blob/master/LICENSE</licenseUrl>
+        <projectUrl>https://github.com/fpt-software/Material-Controls-For-iOS</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Many Google Material Design Controls for iOS native application</description>
+        <summary>Many Google Material Design Controls for iOS native application</summary>
+        <tags>Material,Google,Design,Control,Xamarin,iOS</tags>
+    </metadata>
+    <files>
+        <file src="bin/Release/MaterialControls.dll" target="lib/Xamarin.iOS10" />
+    </files>
+</package>
