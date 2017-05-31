@@ -280,7 +280,7 @@
 }
 
 - (void)updateDividerLine {
-  if (_enabled || _dashDividerWhenDisabled) {
+  if (_enabled || !_dashDividerWhenDisabled) {
     [self drawLineDivider];
   } else {
     [self drawDashedLineDivider];
