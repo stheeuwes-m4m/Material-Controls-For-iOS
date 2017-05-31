@@ -79,6 +79,7 @@ IB_DESIGNABLE
 @property(nonatomic) IBInspectable BOOL highlightLabel;
 @property(null_unspecified, nonatomic) IBInspectable NSString *errorMessage;
 @property(nonatomic) IBInspectable NSInteger maxCharacterCount;
+@property(nonatomic) IBInspectable BOOL dashDividerWhenDisabled;
 
 @property(null_unspecified, nonatomic) IBInspectable UIColor *normalColor;
 @property(null_unspecified, nonatomic) IBInspectable UIColor *highlightColor;

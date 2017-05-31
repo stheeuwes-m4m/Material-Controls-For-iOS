@@ -116,6 +116,7 @@
 #pragma mark DividerView
 @interface DividerView : UIView
 @property(nonatomic) BOOL enabled;
+@property(nonatomic) BOOL dashDividerWhenDisabled;
 @property(nonatomic) UIColor *errorColor;
 @property(nonatomic) UIColor *highlightColor;
 @property(nonatomic) UIColor *normalColor;
@@ -279,7 +280,7 @@
 }
 
 - (void)updateDividerLine {
-  if (_enabled) {
+  if (_enabled || _dashDividerWhenDisabled) {
     [self drawLineDivider];
   } else {
     [self drawDashedLineDivider];
@@ -411,6 +412,7 @@
   [_dividerHolder setHighlightHeight:kMDFocusedDividerHeight];
 
   [self setDividerAnimation:YES];
+  [self setDashDividerWhenDisabled: YES];
 
   _errorView = [[UILabel alloc]
       initWithFrame:CGRectMake(0, 77, self.bounds.size.width, 15)];
@@ -723,6 +725,11 @@
   }
 
   [self relayout];
+}
+
+- (void)setDashDividerWhenDisabled:(BOOL)dashDividerWhenDisabled {
+    _dashDividerWhenDisabled = dashDividerWhenDisabled;
+    [self.dividerHolder setDashDividerWhenDisabled:dashDividerWhenDisabled];
 }
 
 - (void)setSuggestionsDictionary:(NSArray *)suggestionsDictionary {
