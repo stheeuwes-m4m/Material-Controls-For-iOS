@@ -294,6 +294,7 @@
   [backgroundLayer setLineWidth:_normalHeight];
   [backgroundLayer setFillColor:[[UIColor clearColor] CGColor]];
   [backgroundLayer setStrokeColor:[_normalColor CGColor]];
+  [backgroundLayer setLineDashPattern:nil];
 
   [highlightLayer setPath:linePath.CGPath];
   [highlightLayer setLineWidth:_highlightHeight];
